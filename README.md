@@ -12,11 +12,13 @@ _Note for gradle users:_ to make the intructions below build-tool independent, t
 
 Current version (June 2018) v2.0.0 corresponds to Spring Boot 2 and Finchly release train.
 
-Previous versions have been tagged and can be accessed using the `release` tab above or using `git checkout <version>` - for example `git checkout v1.2.0`.
+**WARNING:** Only maven build has been updated.  Gradle buid still to be done.
+
+Previous versions have been tagged and can be accessed using the `Branch` button above or using `git checkout <version>` - for example `git checkout v1.2.0`.
 
 Tagged versions are:
 
-* v2.0.0 - Spring Boot 2.0 and Spring Cloud release-train Finchly
+* v2.0.0 - Spring Boot 2.0 and Spring Cloud release-train Finchley
 * v1.2.0 corresponds to Spring Boot 1.5 and Spring Cloud release-train Edgeware
 * v1.1.0 corresponds to Spring Cloud release-train Brixton
 * v1.0.0 corresponds to Spring Cloud release-train Angel.SR6
@@ -47,7 +49,7 @@ To run the microservices system from the command-line, open three CMD windows (W
  1. In the first window, build the application using either `mvn clean package` or `gradle clean assemble`.  Either way the
     generated file will be `target/microservices-demo-2.0.0.RELEASE.jar` (even if you used gradle).
  1. In the same window run: `java -jar target/microservices-demo-2.0.0.RELEASE.jar registration`
- 1. Switch to the second window and run: `java -jar target/microservices-demo-1.2.0.RELEASE.jar accounts`
+ 1. Switch to the second window and run: `java -jar target/microservices-demo-2.0.0.RELEASE.jar accounts`
  1. In the third window run: `java -jar target/microservices-demo-2.0.0.RELEASE.jar web`
  1. In your favorite browser open the same two links: [http://localhost:1111](http://localhost:1111) and [http://localhost:3333](http://localhost:3333)
 
