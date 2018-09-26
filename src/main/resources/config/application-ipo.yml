@@ -1,0 +1,27 @@
+
+server:
+    port: ${PORT:3333}
+
+spring:
+  application:
+    name: itex-poller
+
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: sinapps
+
+  rabbitmq:
+    host: ${RABBIT_HOST:localhost}
+
+eureka:
+  client:
+    enabled: true
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://${REGISTRY_HOST:localhost}:${REGISTRY_PORT:1000}/eureka/
+  instance:
+    appname: ${spring.application.name}
+    preferIpAddress: true

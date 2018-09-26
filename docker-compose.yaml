@@ -1,0 +1,88 @@
+version: '3'
+services:
+    reg:
+        build: .
+        ports:
+            - 8090:8080
+        volumes:
+            - ./target:/app
+        command: ["java","-Djava.security.egd=file:/dev/./urandom","-jar","microservices-demo-2.0.0.RELEASE.jar", "reg"]
+        environment:
+            SPRING_PROFILES_ACTIVE: reg
+            HOST: reg
+            PORT: 8080
+
+    spo:
+        build: .
+        ports:
+        - 8080
+        volumes:
+        - ./target:/app
+        command: ["java","-Djava.security.egd=file:/dev/./urandom","-jar","microservices-demo-2.0.0.RELEASE.jar", "spo"]
+        depends_on:
+        - reg
+        - rabbit
+        environment:
+            SPRING_PROFILES_ACTIVE: spo
+            PORT: 8080
+            REGISTRY_HOST: reg
+            REGISTRY_PORT: 8080
+            RABBIT_HOST: rabbit
+
+    spu:
+        build: .
+        ports:
+        - 8080
+        volumes:
+        - ./target:/app
+        command: ["java","-Djava.security.egd=file:/dev/./urandom","-jar","microservices-demo-2.0.0.RELEASE.jar", "spu"]
+        depends_on:
+        - reg
+        - rabbit
+        environment:
+            SPRING_PROFILES_ACTIVE: spu
+            PORT: 8080
+            REGISTRY_HOST: reg
+            REGISTRY_PORT: 8080
+            RABBIT_HOST: rabbit
+
+    ipu:
+        build: .
+        ports:
+        - 8080
+        volumes:
+        - ./target:/app
+        command: ["java","-Djava.security.egd=file:/dev/./urandom","-jar","microservices-demo-2.0.0.RELEASE.jar", "ipu"]
+        depends_on:
+        - reg
+        - rabbit
+        environment:
+            SPRING_PROFILES_ACTIVE: ipu
+            PORT: 8080
+            REGISTRY_HOST: reg
+            REGISTRY_PORT: 8080
+            RABBIT_HOST: rabbit
+
+    ipo:
+        build: .
+        ports:
+        - 8080
+        volumes:
+        - ./target:/app
+        command: ["java","-Djava.security.egd=file:/dev/./urandom","-jar","microservices-demo-2.0.0.RELEASE.jar", "ipo"]
+        depends_on:
+        - reg
+        - rabbit
+        environment:
+            SPRING_PROFILES_ACTIVE: ipo
+            PORT: 8080
+            REGISTRY_HOST: reg
+            REGISTRY_PORT: 8080
+            RABBIT_HOST: rabbit
+
+    rabbit:
+        image: rabbitmq:management
+        ports:
+        - "5672:5672" #JMS Port
+        - "15672:15672" #Management Port - default user:pass = guest:guest
+        command: ["rabbitmq-server"]

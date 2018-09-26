@@ -35,7 +35,7 @@ The `localhost:3333` web-site is being handled by a Spring MVC Controller in the
 
 You may find it easier to view the different applications by running them from a command line since you can place the three windows side-by-side and watch their log output
 
-For convenience we are building a 'fat' executble jar whose start-class (main method entry-point) is defined to be in the class `io.pivotal.microservices.services.Main`.  This application expects a single command-line argument that tells it to run as any of our three servers.
+For convenience we are building a 'fat' executble jar whose start-class (main method entry-point) is defined to be in the class `io.pivotal.microservices.Main`.  This application expects a single command-line argument that tells it to run as any of our three servers.
 
 ```
 java -jar target/microservices-demo-2.0.0.RELEASE.jar registration|accounts|web
