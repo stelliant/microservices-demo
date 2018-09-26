@@ -1,6 +1,6 @@
 
 logging:
-  file: /app/logs/${spring.application.name}.log
+  file: ${LOGPATH:/app}/logs/${spring.application.name}.log
   level:
     eu.stelliant: ERROR
     org.springframework: INFO

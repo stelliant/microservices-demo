@@ -22,7 +22,7 @@ public class Main {
       case 3:
         // Optionally set the HTTP port to listen on, overrides
         // value in the <server-name>-server.yml file
-        System.setProperty("server.port", args[1]);
+        System.setProperty("server.port", args[2]);
         // Fall through into ..
 
       case 2:

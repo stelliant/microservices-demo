@@ -1,0 +1,599 @@
+2018-09-27 01:28:11.149  INFO 36608 --- [main] i.p.m.s.publisher.SinappsPublisher       : The following profiles are active: spu
+2018-09-27 01:28:11.191  INFO 36608 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fac631b: startup date [Thu Sep 27 01:28:11 CEST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35bbe5e8
+2018-09-27 01:28:12.323  INFO 36608 --- [main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2018-09-27 01:28:13.372  INFO 36608 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=74772215-24c3-385b-aabf-9050189beb09
+2018-09-27 01:28:13.391  INFO 36608 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2018-09-27 01:28:13.392  INFO 36608 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2018-09-27 01:28:13.404  INFO 36608 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-27 01:28:13.492  INFO 36608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$dd7ab75d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-27 01:28:13.648  INFO 36608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$8200b45e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-27 01:28:13.665  INFO 36608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3328fc2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-27 01:28:13.684  INFO 36608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.dsl.context.IntegrationFlowContext' of type [org.springframework.integration.dsl.context.IntegrationFlowContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-27 01:28:14.009  INFO 36608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4444 (http)
+2018-09-27 01:28:14.043  INFO 36608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-27 01:28:14.043  INFO 36608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-27 01:28:14.056  INFO 36608 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/guytou/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-27 01:28:14.189  INFO 36608 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-27 01:28:14.190  INFO 36608 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2999 ms
+2018-09-27 01:28:14.515  WARN 36608 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-09-27 01:28:14.516  INFO 36608 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-27 01:28:14.539  INFO 36608 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@65e35798
+2018-09-27 01:28:15.865  INFO 36608 --- [localhost-startStop-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2018-09-27 01:28:16.381  INFO 36608 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-27 01:28:16.387  INFO 36608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-27 01:28:16.388  INFO 36608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-27 01:28:16.388  INFO 36608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-27 01:28:16.388  INFO 36608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-27 01:28:16.388  INFO 36608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-09-27 01:28:16.389  INFO 36608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-09-27 01:28:16.662  WARN 36608 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-09-27 01:28:16.662  INFO 36608 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-27 01:28:16.807  INFO 36608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-27 01:28:16.984  INFO 36608 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fac631b: startup date [Thu Sep 27 01:28:11 CEST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35bbe5e8
+2018-09-27 01:28:17.082  INFO 36608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-27 01:28:17.085  INFO 36608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-27 01:28:17.134  INFO 36608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-27 01:28:17.134  INFO 36608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-27 01:28:17.930  INFO 36608 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fac631b: startup date [Thu Sep 27 01:28:11 CEST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35bbe5e8] and template loader path [classpath:/templates/]
+2018-09-27 01:28:17.931  INFO 36608 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-09-27 01:28:18.699  INFO 36608 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-09-27 01:28:18.713  INFO 36608 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-09-27 01:28:18.714  INFO 36608 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-09-27 01:28:18.714  INFO 36608 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-27 01:28:18.850  INFO 36608 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application-1.input' has 1 subscriber(s).
+2018-09-27 01:28:18.853  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-27 01:28:18.862  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-09-27 01:28:18.863  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-09-27 01:28:18.865  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2018-09-27 01:28:18.865  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-09-27 01:28:18.866  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-09-27 01:28:18.871  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-09-27 01:28:18.879  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-09-27 01:28:18.891  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2018-09-27 01:28:18.923  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7fac631b,type=ConfigurationPropertiesRebinder]
+2018-09-27 01:28:18.931  INFO 36608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-09-27 01:28:18.955  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2018-09-27 01:28:18.956  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2018-09-27 01:28:18.960  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2018-09-27 01:28:18.971  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2018-09-27 01:28:18.973  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2018-09-27 01:28:19.035  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel input
+2018-09-27 01:28:19.038  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=input': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=input]
+2018-09-27 01:28:19.050  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2018-09-27 01:28:19.052  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2018-09-27 01:28:19.078  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@53941c2f
+2018-09-27 01:28:19.093  INFO 36608 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=org.springframework.cloud.stream.binding.StreamListenerMessageHandler@53941c2f,bean=handler': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=org.springframework.cloud.stream.binding.StreamListenerMessageHandler@53941c2f,bean=handler]
+2018-09-27 01:28:19.106  INFO 36608 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-09-27 01:28:19.107  INFO 36608 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-09-27 01:28:19.131  INFO 36608 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-09-27 01:28:19.200  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-09-27 01:28:19.517  INFO 36608 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-09-27 01:28:19.517  INFO 36608 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-09-27 01:28:19.705  INFO 36608 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-09-27 01:28:19.705  INFO 36608 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-09-27 01:28:19.931  INFO 36608 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-09-27 01:28:19.963  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-09-27 01:28:19.963  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-09-27 01:28:19.964  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-09-27 01:28:19.964  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-09-27 01:28:19.964  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-09-27 01:28:19.964  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-09-27 01:28:19.964  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-09-27 01:28:20.457  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-09-27 01:28:20.461  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-09-27 01:28:20.465  INFO 36608 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-09-27 01:28:20.469  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1538004500467 with initial instances count: 2
+2018-09-27 01:28:20.475  INFO 36608 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application sinapps-publisher with eureka with status UP
+2018-09-27 01:28:20.475  INFO 36608 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1538004500475, current=UP, previous=STARTING]
+2018-09-27 01:28:20.477  INFO 36608 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SINAPPS-PUBLISHER/gmbp.home:sinapps-publisher:4444: registering service...
+2018-09-27 01:28:20.481  INFO 36608 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-09-27 01:28:20.481  INFO 36608 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2018-09-27 01:28:20.481  INFO 36608 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2018-09-27 01:28:20.482  INFO 36608 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2018-09-27 01:28:20.578  INFO 36608 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@73c60324: startup date [Thu Sep 27 01:28:20 CEST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fac631b
+2018-09-27 01:28:20.587  INFO 36608 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4ab30bf4:0/SimpleConnection@28b466a8 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56037]
+2018-09-27 01:28:20.619  INFO 36608 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-27 01:28:20.673  INFO 36608 --- [main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@7e985ce9: startup date [Thu Sep 27 01:28:20 CEST 2018]; root of context hierarchy
+2018-09-27 01:28:20.822  INFO 36608 --- [main] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: sinapps.pusher, bound to: sinapps
+2018-09-27 01:28:20.883  INFO 36608 --- [main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.sinapps.pusher.errors' has 1 subscriber(s).
+2018-09-27 01:28:20.884  INFO 36608 --- [main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.sinapps.pusher.errors' has 2 subscriber(s).
+2018-09-27 01:28:20.911  INFO 36608 --- [main] o.s.i.a.i.AmqpInboundChannelAdapter      : started inbound.sinapps.pusher
+2018-09-27 01:28:20.913  INFO 36608 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-27 01:28:20.973  INFO 36608 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4444 (http) with context path ''
+2018-09-27 01:28:20.974  INFO 36608 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 4444
+2018-09-27 01:28:20.977  INFO 36608 --- [main] i.p.m.s.publisher.SinappsPublisher       : Started SinappsPublisher in 12.917 seconds (JVM running for 13.977)
+2018-09-27 01:28:21.182  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:22.171  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:23.172  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:24.178  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:25.183  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:26.188  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:27.191  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:28.198  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:29.198  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:30.204  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:31.208  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:32.213  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:33.216  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:34.222  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:35.227  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:36.231  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:37.237  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:38.238  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:39.255  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:40.256  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:41.266  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:42.268  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:43.269  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:44.271  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:45.273  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:46.277  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:47.281  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:48.284  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:49.289  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:50.291  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:51.296  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:52.300  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:53.305  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:54.307  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:55.311  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:56.317  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:57.319  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:28:58.324  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:28:59.329  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:00.334  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:01.338  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:02.341  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:03.342  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:04.344  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:05.347  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:06.352  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:07.358  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:08.363  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:09.369  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:10.373  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:11.378  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:12.382  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:13.387  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:14.390  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:15.392  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:16.398  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:17.404  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:18.409  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:19.409  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:20.413  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:21.418  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:22.424  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:23.428  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:24.428  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:25.429  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:26.430  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:27.435  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:28.439  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:29.442  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:30.446  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:31.448  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:32.448  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:33.453  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:34.454  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:35.459  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:36.464  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:37.466  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:38.470  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:39.473  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:40.477  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:41.483  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:42.484  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:43.488  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:44.489  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:45.493  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:46.498  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:47.501  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:48.505  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:49.507  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:50.511  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:51.514  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:52.519  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:53.524  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:54.525  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:55.529  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:56.533  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:57.538  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:29:58.539  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:29:59.543  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:00.547  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:01.551  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:02.555  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:03.558  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:04.561  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:05.417  INFO 37025 --- [main] i.p.m.s.publisher.SinappsPublisher       : The following profiles are active: spu
+2018-09-27 01:30:05.427  INFO 37025 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@551aa95a: startup date [Thu Sep 27 01:30:05 CEST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@4c203ea1
+2018-09-27 01:30:05.564  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:05.987  WARN 37025 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [io.pivotal.microservices.sinapps.publisher.SinappsPublisher]; nested exception is java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration$DifferentManagementContextConfiguration
+2018-09-27 01:30:05.997  INFO 37025 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2018-09-27 01:30:06.002 ERROR 37025 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to process import candidates for configuration class [io.pivotal.microservices.sinapps.publisher.SinappsPublisher]; nested exception is java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration$DifferentManagementContextConfiguration
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:648)
+	at org.springframework.context.annotation.ConfigurationClassParser.lambda$processDeferredImportSelectors$2(ConfigurationClassParser.java:567)
+	at java.util.ArrayList.forEach(ArrayList.java:1255)
+	at org.springframework.context.annotation.ConfigurationClassParser.processDeferredImportSelectors(ConfigurationClassParser.java:563)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:233)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:273)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at io.pivotal.microservices.sinapps.publisher.SinappsPublisher.main(SinappsPublisher.java:18)
+	at io.pivotal.microservices.Main.main(Main.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:48)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:87)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:50)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:51)
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration$DifferentManagementContextConfiguration
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:64)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:221)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:362)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:265)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.processImports(ConfigurationClassParser.java:638)
+	... 26 common frames omitted
+Caused by: org.springframework.core.convert.ConversionFailedException: Failed to convert from type [java.lang.String] to type [java.lang.Integer] for value '--spring.profiles.active=spu'; nested exception is java.lang.NumberFormatException: For input string: "--spring.profiles.active=spu"
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:46)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:191)
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:174)
+	at org.springframework.core.env.AbstractPropertyResolver.convertValueIfNecessary(AbstractPropertyResolver.java:263)
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:91)
+	at org.springframework.core.env.PropertySourcesPropertyResolver.getProperty(PropertySourcesPropertyResolver.java:68)
+	at org.springframework.core.env.AbstractEnvironment.getProperty(AbstractEnvironment.java:542)
+	at org.springframework.boot.actuate.autoconfigure.web.server.ManagementPortType.getPortProperty(ManagementPortType.java:57)
+	at org.springframework.boot.actuate.autoconfigure.web.server.ManagementPortType.get(ManagementPortType.java:45)
+	at org.springframework.boot.actuate.autoconfigure.web.server.OnManagementPortCondition.getMatchOutcome(OnManagementPortCondition.java:53)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 32 common frames omitted
+Caused by: java.lang.NumberFormatException: For input string: "--spring.profiles.active=spu"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.valueOf(Integer.java:766)
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:210)
+	at org.springframework.core.convert.support.StringToNumberConverterFactory$StringToNumber.convert(StringToNumberConverterFactory.java:62)
+	at org.springframework.core.convert.support.StringToNumberConverterFactory$StringToNumber.convert(StringToNumberConverterFactory.java:49)
+	at org.springframework.core.convert.support.GenericConversionService$ConverterFactoryAdapter.convert(GenericConversionService.java:436)
+	at org.springframework.core.convert.support.ConversionUtils.invokeConverter(ConversionUtils.java:40)
+	... 42 common frames omitted
+
+2018-09-27 01:30:06.570  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:07.572  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:08.575  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:09.575  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:10.579  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:11.585  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:12.589  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:13.594  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:14.598  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:15.601  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:16.606  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:17.610  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:18.614  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:19.619  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:20.623  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:21.625  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:22.632  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:23.633  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:24.635  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:25.640  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:26.644  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:27.646  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:28.651  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:29.651  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:30.657  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:31.660  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:32.662  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:33.668  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:34.671  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:35.674  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:36.677  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:37.681  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:38.685  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:39.691  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:40.694  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:41.697  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:42.699  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:43.702  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:44.705  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:45.709  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:46.712  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:47.715  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:48.719  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:49.724  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:50.726  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:51.729  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:52.733  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:53.734  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:54.735  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:55.740  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:56.745  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:57.751  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:30:58.756  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:30:59.759  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:00.764  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:01.768  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:02.774  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:03.778  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:04.783  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:05.789  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:06.791  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:07.792  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:08.797  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:09.801  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:10.804  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:11.806  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:12.810  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:13.811  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:14.813  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:15.815  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:16.819  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:17.819  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:18.820  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:19.822  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:20.825  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:21.828  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:22.831  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:23.836  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:24.838  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:25.844  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:26.847  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:27.849  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:28.852  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:29.854  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:30.021  INFO 37342 --- [main] i.p.m.s.publisher.SinappsPublisher       : The following profiles are active: spu
+2018-09-27 01:31:30.031  INFO 37342 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a5ed7a6: startup date [Thu Sep 27 01:31:30 CEST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7cf10a6f
+2018-09-27 01:31:30.552  INFO 37342 --- [main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2018-09-27 01:31:30.859  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:31.371  INFO 37342 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=74772215-24c3-385b-aabf-9050189beb09
+2018-09-27 01:31:31.389  INFO 37342 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2018-09-27 01:31:31.390  INFO 37342 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2018-09-27 01:31:31.402  INFO 37342 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-27 01:31:31.488  INFO 37342 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$52dec665] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-27 01:31:31.658  INFO 37342 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration$$EnhancerBySpringCGLIB$$f764c366] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-27 01:31:31.672  INFO 37342 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a88d0b34] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-27 01:31:31.687  INFO 37342 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.dsl.context.IntegrationFlowContext' of type [org.springframework.integration.dsl.context.IntegrationFlowContext] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-27 01:31:31.861  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:32.016  INFO 37342 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 5555 (http)
+2018-09-27 01:31:32.052  INFO 37342 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-27 01:31:32.053  INFO 37342 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-09-27 01:31:32.070  INFO 37342 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/guytou/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-09-27 01:31:32.186  INFO 37342 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-27 01:31:32.186  INFO 37342 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2155 ms
+2018-09-27 01:31:32.563  WARN 37342 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-09-27 01:31:32.564  INFO 37342 --- [localhost-startStop-1] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-27 01:31:32.595  INFO 37342 --- [localhost-startStop-1] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1a476813
+2018-09-27 01:31:32.862  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:33.741  INFO 37342 --- [localhost-startStop-1] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2018-09-27 01:31:33.865  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:34.152  INFO 37342 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-09-27 01:31:34.157  INFO 37342 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-27 01:31:34.157  INFO 37342 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-27 01:31:34.157  INFO 37342 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-27 01:31:34.158  INFO 37342 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-27 01:31:34.158  INFO 37342 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-09-27 01:31:34.158  INFO 37342 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-09-27 01:31:34.472  WARN 37342 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2018-09-27 01:31:34.473  INFO 37342 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2018-09-27 01:31:34.703  INFO 37342 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-27 01:31:34.870  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:34.973  INFO 37342 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a5ed7a6: startup date [Thu Sep 27 01:31:30 CEST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7cf10a6f
+2018-09-27 01:31:35.122  INFO 37342 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-27 01:31:35.124  INFO 37342 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-27 01:31:35.166  INFO 37342 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-27 01:31:35.166  INFO 37342 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-27 01:31:35.830  INFO 37342 --- [main] o.s.ui.freemarker.SpringTemplateLoader   : SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a5ed7a6: startup date [Thu Sep 27 01:31:30 CEST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7cf10a6f] and template loader path [classpath:/templates/]
+2018-09-27 01:31:35.832  INFO 37342 --- [main] o.s.w.s.v.f.FreeMarkerConfigurer         : ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2018-09-27 01:31:35.876  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:36.251  INFO 37342 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2018-09-27 01:31:36.271  INFO 37342 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-09-27 01:31:36.272  INFO 37342 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-09-27 01:31:36.272  INFO 37342 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-27 01:31:36.403  INFO 37342 --- [main] o.s.integration.channel.DirectChannel    : Channel 'application-1.input' has 1 subscriber(s).
+2018-09-27 01:31:36.406  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-27 01:31:36.416  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-09-27 01:31:36.416  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2018-09-27 01:31:36.418  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2018-09-27 01:31:36.418  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2018-09-27 01:31:36.419  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2018-09-27 01:31:36.423  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2018-09-27 01:31:36.432  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2018-09-27 01:31:36.446  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2018-09-27 01:31:36.473  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=3a5ed7a6,type=ConfigurationPropertiesRebinder]
+2018-09-27 01:31:36.482  INFO 37342 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-09-27 01:31:36.507  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2018-09-27 01:31:36.508  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2018-09-27 01:31:36.511  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2018-09-27 01:31:36.574  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel input
+2018-09-27 01:31:36.577  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=input': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=input]
+2018-09-27 01:31:36.586  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2018-09-27 01:31:36.588  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2018-09-27 01:31:36.598  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler org.springframework.cloud.stream.binding.StreamListenerMessageHandler@3c7c886c
+2018-09-27 01:31:36.599  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=org.springframework.cloud.stream.binding.StreamListenerMessageHandler@3c7c886c,bean=handler': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=org.springframework.cloud.stream.binding.StreamListenerMessageHandler@3c7c886c,bean=handler]
+2018-09-27 01:31:36.618  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2018-09-27 01:31:36.620  INFO 37342 --- [main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2018-09-27 01:31:36.637  INFO 37342 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-09-27 01:31:36.638  INFO 37342 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2018-09-27 01:31:36.660  INFO 37342 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2018-09-27 01:31:36.728  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2018-09-27 01:31:36.878  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:37.017  INFO 37342 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2018-09-27 01:31:37.017  INFO 37342 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2018-09-27 01:31:37.239  INFO 37342 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2018-09-27 01:31:37.240  INFO 37342 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2018-09-27 01:31:37.516  INFO 37342 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2018-09-27 01:31:37.549  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2018-09-27 01:31:37.549  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2018-09-27 01:31:37.549  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2018-09-27 01:31:37.549  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2018-09-27 01:31:37.550  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2018-09-27 01:31:37.550  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2018-09-27 01:31:37.550  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2018-09-27 01:31:37.881  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:38.071  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2018-09-27 01:31:38.073  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2018-09-27 01:31:38.076  INFO 37342 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2018-09-27 01:31:38.079  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1538004698078 with initial instances count: 4
+2018-09-27 01:31:38.085  INFO 37342 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application sinapps-publisher with eureka with status UP
+2018-09-27 01:31:38.098  INFO 37342 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1538004698098, current=UP, previous=STARTING]
+2018-09-27 01:31:38.099  INFO 37342 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SINAPPS-PUBLISHER/gmbp.home:sinapps-publisher:5555: registering service...
+2018-09-27 01:31:38.105  INFO 37342 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-09-27 01:31:38.105  INFO 37342 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2018-09-27 01:31:38.106  INFO 37342 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2018-09-27 01:31:38.107  INFO 37342 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2018-09-27 01:31:38.202  INFO 37342 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4275c20c: startup date [Thu Sep 27 01:31:38 CEST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a5ed7a6
+2018-09-27 01:31:38.225  INFO 37342 --- [DiscoveryClient-InstanceInfoReplicator-0] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#38a13ab:0/SimpleConnection@75dd04be [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56114]
+2018-09-27 01:31:38.243  INFO 37342 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-27 01:31:38.305  INFO 37342 --- [main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@3faf2e7d: startup date [Thu Sep 27 01:31:38 CEST 2018]; root of context hierarchy
+2018-09-27 01:31:38.450  INFO 37342 --- [main] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: sinapps.pusher, bound to: sinapps
+2018-09-27 01:31:38.479  INFO 37342 --- [main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.sinapps.pusher.errors' has 1 subscriber(s).
+2018-09-27 01:31:38.480  INFO 37342 --- [main] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.sinapps.pusher.errors' has 2 subscriber(s).
+2018-09-27 01:31:38.503  INFO 37342 --- [main] o.s.i.a.i.AmqpInboundChannelAdapter      : started inbound.sinapps.pusher
+2018-09-27 01:31:38.506  INFO 37342 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-27 01:31:38.565  INFO 37342 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 5555 (http) with context path ''
+2018-09-27 01:31:38.567  INFO 37342 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 5555
+2018-09-27 01:31:38.572  INFO 37342 --- [main] i.p.m.s.publisher.SinappsPublisher       : Started SinappsPublisher in 10.425 seconds (JVM running for 11.123)
+2018-09-27 01:31:38.884  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:39.906  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:40.893  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:41.897  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:42.899  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:43.901  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:44.901  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:45.907  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:46.912  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:47.916  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:48.921  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:49.928  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:50.934  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:51.940  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:52.941  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:53.945  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:54.951  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:55.956  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:56.958  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:57.959  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:31:58.962  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:31:59.964  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:00.967  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:01.971  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:02.972  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:03.973  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:04.974  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:05.979  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:06.982  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:07.987  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:08.988  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:09.994  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:10.998  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:12.005  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:13.007  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:14.010  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:15.012  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:16.016  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:17.020  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:18.025  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:19.029  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:20.034  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:21.037  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:22.040  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:23.042  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:24.047  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:25.048  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:26.052  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:27.056  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:28.061  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:29.066  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:30.082  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:31.075  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:32.079  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:33.082  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:34.083  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:35.088  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:36.090  INFO 37342 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:37.094  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:37.912  INFO 37342 --- [Thread-9] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a5ed7a6: startup date [Thu Sep 27 01:31:30 CEST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7cf10a6f
+2018-09-27 01:32:37.919  INFO 37342 --- [Thread-9] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application sinapps-publisher with eureka with status DOWN
+2018-09-27 01:32:37.920  WARN 37342 --- [Thread-9] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1538004757920, current=DOWN, previous=UP]
+2018-09-27 01:32:37.920  INFO 37342 --- [Thread-9] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4275c20c: startup date [Thu Sep 27 01:31:38 CEST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3a5ed7a6
+2018-09-27 01:32:37.922  WARN 37342 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1538004757922, current=UP, previous=DOWN]
+2018-09-27 01:32:37.922  INFO 37342 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SINAPPS-PUBLISHER/gmbp.home:sinapps-publisher:5555: registering service...
+2018-09-27 01:32:37.931  INFO 37342 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SINAPPS-PUBLISHER/gmbp.home:sinapps-publisher:5555 - registration status: 204
+2018-09-27 01:32:37.937  INFO 37342 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-09-27 01:32:37.937  INFO 37342 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147482647
+2018-09-27 01:32:37.941  INFO 37342 --- [Thread-9] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-09-27 01:32:38.098  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:38.105  INFO 37342 --- [Thread-9] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-09-27 01:32:38.105  INFO 37342 --- [Thread-9] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped inbound.sinapps.pusher
+2018-09-27 01:32:38.107  INFO 37342 --- [Thread-9] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.sinapps.pusher.errors' has 1 subscriber(s).
+2018-09-27 01:32:38.108  INFO 37342 --- [Thread-9] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.sinapps.pusher.errors' has 0 subscriber(s).
+2018-09-27 01:32:38.109  INFO 37342 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-09-27 01:32:38.114  INFO 37342 --- [Thread-9] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-09-27 01:32:38.115  INFO 37342 --- [Thread-9] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2018-09-27 01:32:38.115  INFO 37342 --- [Thread-9] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2018-09-27 01:32:38.115  INFO 37342 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-09-27 01:32:38.116  INFO 37342 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Unregistering JMX-exposed beans on shutdown
+2018-09-27 01:32:38.117  INFO 37342 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Unregistering JMX-exposed beans
+2018-09-27 01:32:38.118  INFO 37342 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: errorChannel
+2018-09-27 01:32:38.118  INFO 37342 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: input
+2018-09-27 01:32:38.118  INFO 37342 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2018-09-27 01:32:38.118  INFO 37342 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@3c7c886c
+2018-09-27 01:32:38.119  INFO 37342 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2018-09-27 01:32:38.120  INFO 37342 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-27 01:32:38.121  INFO 37342 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-27 01:32:38.126  INFO 37342 --- [Thread-9] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2018-09-27 01:32:38.136  INFO 37342 --- [Thread-9] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-09-27 01:32:38.140  WARN 37342 --- [Thread-9] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
+2018-09-27 01:32:39.103  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:40.107  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...bar
+2018-09-27 01:32:41.109  INFO 36608 --- [sinapps.pusher-1] i.p.m.s.p.SinappsPublisher$TestConsumer  : Data received...foo
+2018-09-27 01:32:41.338  INFO 36608 --- [Thread-9] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fac631b: startup date [Thu Sep 27 01:28:11 CEST 2018]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@35bbe5e8
+2018-09-27 01:32:41.352  INFO 36608 --- [Thread-9] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application sinapps-publisher with eureka with status DOWN
+2018-09-27 01:32:41.354  WARN 36608 --- [Thread-9] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1538004761354, current=DOWN, previous=UP]
+2018-09-27 01:32:41.358  INFO 36608 --- [Thread-9] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@73c60324: startup date [Thu Sep 27 01:28:20 CEST 2018]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7fac631b
+2018-09-27 01:32:41.358  WARN 36608 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1538004761358, current=UP, previous=DOWN]
+2018-09-27 01:32:41.359  INFO 36608 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SINAPPS-PUBLISHER/gmbp.home:sinapps-publisher:4444: registering service...
+2018-09-27 01:32:41.379  INFO 36608 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_SINAPPS-PUBLISHER/gmbp.home:sinapps-publisher:4444 - registration status: 204
+2018-09-27 01:32:41.401  INFO 36608 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2018-09-27 01:32:41.402  INFO 36608 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147482647
+2018-09-27 01:32:41.418  INFO 36608 --- [Thread-9] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2018-09-27 01:32:42.136  INFO 36608 --- [Thread-9] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2018-09-27 01:32:42.139  INFO 36608 --- [Thread-9] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped inbound.sinapps.pusher
+2018-09-27 01:32:42.148  INFO 36608 --- [Thread-9] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.sinapps.pusher.errors' has 1 subscriber(s).
+2018-09-27 01:32:42.148  INFO 36608 --- [Thread-9] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.sinapps.pusher.errors' has 0 subscriber(s).
+2018-09-27 01:32:42.149  INFO 36608 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2018-09-27 01:32:42.166  INFO 36608 --- [Thread-9] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2018-09-27 01:32:42.167  INFO 36608 --- [Thread-9] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2018-09-27 01:32:42.167  INFO 36608 --- [Thread-9] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2018-09-27 01:32:42.167  INFO 36608 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2018-09-27 01:32:42.173  INFO 36608 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Unregistering JMX-exposed beans on shutdown
+2018-09-27 01:32:42.178  INFO 36608 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Unregistering JMX-exposed beans
+2018-09-27 01:32:42.184  INFO 36608 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2018-09-27 01:32:42.185  INFO 36608 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: errorChannel
+2018-09-27 01:32:42.185  INFO 36608 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: input
+2018-09-27 01:32:42.185  INFO 36608 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2018-09-27 01:32:42.185  INFO 36608 --- [Thread-9] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: org.springframework.cloud.stream.binding.StreamListenerMessageHandler@53941c2f
+2018-09-27 01:32:42.188  INFO 36608 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-09-27 01:32:42.188  INFO 36608 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-09-27 01:32:42.211  INFO 36608 --- [Thread-9] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2018-09-27 01:32:42.237  INFO 36608 --- [Thread-9] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2018-09-27 01:32:42.259  WARN 36608 --- [Thread-9] .s.c.a.CommonAnnotationBeanPostProcessor : Invocation of destroy method failed on bean with name 'scopedTarget.eurekaClient': org.springframework.beans.factory.BeanCreationNotAllowedException: Error creating bean with name 'eurekaInstanceConfigBean': Singleton bean creation not allowed while singletons of this factory are in destruction (Do not request a bean from a BeanFactory in a destroy method implementation!)
