@@ -16,20 +16,18 @@ public class Main {
 
   public static void main(String[] args) {
 
-    String serverName = "NO-VALUE";
+    String server;
 
     switch (args.length) {
-      case 3:
+      case 2:
         // Optionally set the HTTP port to listen on, overrides
-        // value in the <server-name>-server.yml file
-        System.setProperty("server.port", args[2]);
+        // value in the application-<server>.yml file
+        System.setProperty("server.port", args[1]);
         // Fall through into ..
 
-      case 2:
-        // Do nothing, profiles.active
-
       case 1:
-        serverName = args[0].toLowerCase();
+        server = args[0].toLowerCase();
+        System.setProperty("spring.profiles.active", server);
         break;
 
       default:
@@ -37,26 +35,26 @@ public class Main {
         return;
     }
 
-    if (serverName.equals("registration") || serverName.equals("reg")) {
+    if ("reg".equals(server)) {
       RegistrationServer.main(args);
-    } else if (serverName.equals("spo")) {
+    } else if ("spo".equals(server)) {
       SinappsPoller.main(args);
-    } else if (serverName.equals("spu")) {
-      SinappsPublisher.main(args);
-    } else if (serverName.equals("ipu")) {
+    } else if ("ipu".equals(server)) {
       ItexPublisher.main(args);
-    } else if (serverName.equals("ipo")) {
+    } else if ("spu".equals(server)) {
+      SinappsPublisher.main(args);
+    } else if ("ipo".equals(server)) {
       ItexPoller.main(args);
     } else {
-      System.out.println("Unknown server type: " + serverName);
+      System.out.println("Unknown server: " + server);
       usage();
     }
   }
 
   protected static void usage() {
-    System.out.println("Usage: java -jar ... <server-name> [server-port]");
+    System.out.println("Usage: java -jar ... <server> [server-port]");
     System.out.println(
-        "     where server-name is 'reg', 'registration', "
-            + "'accounts' or 'web' and server-port > 1024");
+        "   where server is 'reg', 'spo', 'ipu', 'ipo' or 'spu'"
+            + " and server-port > 1024");
   }
 }

@@ -8,9 +8,8 @@ services:
             - ./target:/app
         command: ["java","-Djava.security.egd=file:/dev/./urandom","-jar","microservices-demo-2.0.0.RELEASE.jar", "reg"]
         environment:
-            SPRING_PROFILES_ACTIVE: reg
-            HOST: reg
-            PORT: 8080
+            EUREKA_HOST: reg
+            EUREKA_PORT: 8080
 
     spo:
         build: .
@@ -23,10 +22,9 @@ services:
         - reg
         - rabbit
         environment:
-            SPRING_PROFILES_ACTIVE: spo
             PORT: 8080
-            REGISTRY_HOST: reg
-            REGISTRY_PORT: 8080
+            EUREKA_HOST: reg
+            EUREKA_PORT: 8080
             RABBIT_HOST: rabbit
 
     spu:
@@ -40,10 +38,9 @@ services:
         - reg
         - rabbit
         environment:
-            SPRING_PROFILES_ACTIVE: spu
             PORT: 8080
-            REGISTRY_HOST: reg
-            REGISTRY_PORT: 8080
+            EUREKA_HOST: reg
+            EUREKA_PORT: 8080
             RABBIT_HOST: rabbit
 
     ipu:
@@ -57,10 +54,9 @@ services:
         - reg
         - rabbit
         environment:
-            SPRING_PROFILES_ACTIVE: ipu
             PORT: 8080
-            REGISTRY_HOST: reg
-            REGISTRY_PORT: 8080
+            EUREKA_HOST: reg
+            EUREKA_PORT: 8080
             RABBIT_HOST: rabbit
 
     ipo:
@@ -74,10 +70,9 @@ services:
         - reg
         - rabbit
         environment:
-            SPRING_PROFILES_ACTIVE: ipo
             PORT: 8080
-            REGISTRY_HOST: reg
-            REGISTRY_PORT: 8080
+            EUREKA_HOST: reg
+            EUREKA_PORT: 8080
             RABBIT_HOST: rabbit
 
     rabbit:

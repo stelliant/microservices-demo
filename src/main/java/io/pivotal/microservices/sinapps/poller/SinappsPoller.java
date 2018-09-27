@@ -30,10 +30,10 @@ public class SinappsPoller {
 		private AtomicBoolean semaphore = new AtomicBoolean(true);
 
 		@Bean
-		@InboundChannelAdapter(channel = Source.OUTPUT, poller = @Poller(fixedDelay = "1000"))
+		@InboundChannelAdapter(channel = Source.OUTPUT, poller = @Poller(fixedDelay = "15000"))
 		public MessageSource<String> sendTestData() {
 			return () ->
-					new GenericMessage<>(this.semaphore.getAndSet(!this.semaphore.get()) ? "foo" : "bar");
+					new GenericMessage<>(this.semaphore.getAndSet(!this.semaphore.get()) ? "mission" : "event");
 
 		}
 	}

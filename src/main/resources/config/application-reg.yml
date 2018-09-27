@@ -1,6 +1,6 @@
 
 server:
-    port: ${PORT:9999}
+    port: ${EUREKA_PORT:9999}
 
 spring:
   application:
@@ -10,7 +10,7 @@ spring:
 
 eureka:
   instance:
-    hostname: ${HOST:localhost}
+    hostname: ${EUREKA_HOST:localhost}
     preferIpAddress: true
   client:
     registerWithEureka: false
