@@ -1,6 +1,6 @@
 
 server:
-    port: ${PORT:2222}
+  port: ${PORT:2222}
 
 spring:
   application:
@@ -17,12 +17,13 @@ spring:
     host: ${RABBIT_HOST:localhost}
 
 eureka:
+  instance:
+    appname: ${spring.application.name}
+    preferIpAddress: true
+
   client:
     enabled: true
     healthcheck:
       enabled: true
     serviceUrl:
       defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:9999}/eureka/
-  instance:
-    appname: ${spring.application.name}
-    preferIpAddress: true

@@ -3,13 +3,13 @@ services:
     reg:
         build: .
         ports:
-            - 8090:8080
+            - 8090:8080 # <localhost Port>:<inter container Port>
         volumes:
             - ./target:/app
         command: ["java","-Djava.security.egd=file:/dev/./urandom","-jar","microservices-demo-2.0.0.RELEASE.jar", "reg"]
         environment:
-            EUREKA_HOST: reg
-            EUREKA_PORT: 8080
+            HOST: reg
+            PORT: 8080
 
     spo:
         build: .
@@ -78,6 +78,6 @@ services:
     rabbit:
         image: rabbitmq:management
         ports:
-        - "5672:5672" #JMS Port
-        - "15672:15672" #Management Port - default user:pass = guest:guest
+        - 5672:5672 # JMS Port
+        - 15672:15672 # Management Port - default user:pass = guest:guest
         command: ["rabbitmq-server"]
